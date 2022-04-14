@@ -4,3 +4,4 @@ This is an example repo for how to setup k6 with Jenkins to add load testing int
 The full guide describing how to use this repository is located at:
 https://blog.loadimpact.com/integrating-load-testing-with-jenkins
 i
+2
