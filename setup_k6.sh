@@ -1,9 +1,10 @@
 #!/bin/bash
 set -ex
 
-sudo apt-get update
-sudo apt-get install dirmngr --install-recommends
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-echo "deb https://dl.bintray.com/loadimpact/deb stable main" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install k6
+cat setup_k6.sh
+sudo yum update -y
+
+sudo yum  install https://dl.k6.io/rpm/repo.rpm -y
+sudo yum install k6 -y 
+
+ 
